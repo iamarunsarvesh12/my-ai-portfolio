@@ -1,361 +1,329 @@
 // ============================================================
-// portfolioData.js — Centralized configuration for Md Yusuf's Portfolio
+// portfolioData.js — Centralized configuration for Arun Sarvesh R's Portfolio
 // All external links, personal info, and content in one place.
 // Update this file to change any content across the entire site.
 // ============================================================
 
 export const personalInfo = {
-  name: "Md Yusuf",
-  firstName: "Md Yusuf",
-  brandName: "Md Yusuf",
-  title: "Full Stack & Java Developer",
-  location: "Bhopal, India",
-  phone: "+91 99396-08743",
+  name: "Arun Sarvesh R",
+  firstName: "Arun Sarvesh",
+  brandName: "Arun Sarvesh",
+  title: "Data Science Enthusiast | Python • SQL • AI & Computer Vision",
+  location: "Srirangam, Tamil Nadu, India",
+  phone: "+91 8667794520",
   emails: {
-    primary: "mdyusufcse096@iesuniversity.ac.in",
-    secondary: "yusuf.rgpv@gmail.com",
+    primary: "iamarunsarvesh@gmail.com",
+    secondary: "iamarunsarvesh@gmail.com",
   },
   summary:
-    "Aspiring software engineer and motivated B.Tech Computer Science student with solid skills in Java, Spring Boot, React, and Python. Passionate about building scalable full-stack applications with clean architecture and modern tech stacks.",
-  resumeUrl: "/Md_Yusuf_Resume_2026.pdf",
+    "Passionate Data Science Enthusiast and B.E. Computer Science student at K. Ramakrishnan College of Engineering (2024 - 2028). Skilled in Python, SQL, Machine Learning, Computer Vision, and building AI-driven real-time applications.",
+  resumeUrl: "/Arun_Sarvesh_Resume.pdf",
 };
 
 export const socialLinks = {
-  github: "https://github.com/mdyusuf0",
-  linkedin: "https://linkedin.com/in/mdyusuf0",
-  instagram: "https://instagram.com/heyyusuffff",
+  github: "https://github.com",
+  linkedin: "https://www.linkedin.com/in/arun-sarvesh-r-34252a373",
+  instagram: "https://instagram.com",
 };
 
 export const heroContent = {
-  greeting: "Hi, I'm Md Yusuf",
-  titleHighlight: "Full Stack & Java Developer",
+  greeting: "Hi, I'm Arun Sarvesh",
+  titleHighlight: "Data Science Enthusiast",
   subtitle:
-    "I build fast, scalable applications using Java, Spring Boot, MERN Stack, and Python.",
+    "Python • SQL • AI & Computer Vision | Building intelligent solutions, predictive models, and real-time AI systems.",
   ctaPrimary: { text: "View My Work", href: "#projects" },
   ctaSecondary: {
     text: "Contact Me",
-    href: "mailto:mdyusufcse096@iesuniversity.ac.in?subject=Hiring Inquiry – Portfolio&body=Hello Md Yusuf,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
+    href: "mailto:iamarunsarvesh@gmail.com?subject=Hiring Inquiry – Portfolio&body=Hello Arun Sarvesh,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
   },
-  ctaResume: { text: "Download Resume", href: "/Md_Yusuf_Resume_2026.pdf" },
+  ctaResume: { text: "Download Resume", href: "/Arun_Sarvesh_Resume.pdf" },
 };
 
 export const aboutContent = {
   heading: "Hello!",
-  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Md Yusuf</span>, an aspiring software engineer based in Bhopal, India, dedicated to crafting clean, functional, and highly scalable full-stack applications.`,
-  techStack: ["Java", "Spring Boot", "MERN Stack"],
+  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Arun Sarvesh R</span>, a Data Science Enthusiast pursuing B.E. Computer Science at K. Ramakrishnan College of Engineering (2024 - 2028). Dedicated to leveraging Python, SQL, Machine Learning, and Computer Vision to solve real-world engineering challenges.`,
+  techStack: ["Python", "SQL", "AI & Computer Vision"],
 };
 
 export const skillsContent = {
   badge: "My Process",
-  heading: "Here's how I turn ideas into real-world applications",
+  heading: "Here's how I turn complex data into intelligent solutions",
   description:
-    "I follow a structured, creative, and highly technical approach to turn ideas into robust full-stack applications.",
+    "I follow a structured, data-driven methodology to process raw data, train robust models, and deploy scalable computer vision and AI applications.",
   cards: [
     {
       number: "01",
-      title: "Research",
-      text: "I start by understanding goals, user requirements, and technical constraints to lay a rock-solid foundation for the project.",
+      title: "Data Preparation",
+      text: "Gathering, cleaning, and preprocessing structured and unstructured data to build high-quality model training pipelines.",
     },
     {
       number: "02",
-      title: "Design",
-      text: "Crafting clean architecture, intuitive interfaces, and pixel-perfect wireframes that guarantee an engaging and accessible user experience.",
+      title: "Model Architecture",
+      text: "Designing and tuning Machine Learning algorithms and Neural Network architectures tailored to specific problem domains.",
     },
     {
       number: "03",
-      title: "Develop",
-      text: "Building scalable backends and responsive frontends using modern tech stacks and best practices.",
+      title: "Computer Vision & AI",
+      text: "Integrating real-time object detection models like YOLOv8 and NLTK for voice, image, and text intelligence.",
     },
     {
       number: "04",
-      title: "Deploy",
-      text: "Rigorous testing, performance optimization, and seamless deployment to cloud infrastructure, followed by ongoing support.",
+      title: "Deployment & Optimization",
+      text: "Rigorous testing, API integration, database management with SQL, and deploying end-to-end applications.",
     },
   ],
-  endText: "Ready to ship!",
+  endText: "Ready to innovate!",
 };
 
-// Brand New Technical Skills Data
+// Technical Skills Data
 export const technicalSkills = {
   categories: [
     {
-      title: "Programming Languages",
+      title: "Programming & Querying",
       skills: [
-        { name: "Java", level: 90 },
-        { name: "C++", level: 85 },
-        { name: "Python", level: 75 }
+        { name: "Python", level: 92 },
+        { name: "SQL", level: 88 },
+        { name: "C / C++ Basics", level: 75 }
       ]
     },
     {
-      title: "Full Stack",
+      title: "AI & Computer Vision",
       skills: [
-        { name: "MERN Stack", level: 90 },
-        { name: "HTML", level: 95 },
-        { name: "CSS", level: 90 },
-        { name: "JavaScript", level: 92 }
+        { name: "Computer Vision", level: 85 },
+        { name: "YOLOv8", level: 85 },
+        { name: "Machine Learning", level: 82 }
       ]
     },
     {
-      title: "Backend",
+      title: "Libraries & Frameworks",
       skills: [
-        { name: "Spring Boot", level: 88 },
-        { name: "FastAPI", level: 75 },
-        { name: "REST APIs", level: 90 }
+        { name: "Scikit-Learn", level: 80 },
+        { name: "NLTK", level: 78 },
+        { name: "OpenCV", level: 82 },
+        { name: "Pandas & NumPy", level: 85 }
       ]
     },
     {
-      title: "Databases",
+      title: "Databases & Storage",
       skills: [
-        { name: "MongoDB", level: 88 },
         { name: "MySQL", level: 85 },
-        { name: "Firebase", level: 80 }
+        { name: "Relational Databases", level: 82 },
+        { name: "Data Warehousing", level: 78 }
       ]
     },
     {
-      title: "Tools & Automation",
+      title: "Developer Tools",
       skills: [
-        { name: "Git & GitHub", level: 90 },
-        { name: "VS Code", level: 95 },
-        { name: "Postman", level: 88 },
-        { name: "n8n", level: 82 },
-        { name: "MongoDB Compass", level: 85 },
-        { name: "Antigravity", level: 80 },
-        { name: "Codex", level: 75 }
+        { name: "Git & GitHub", level: 88 },
+        { name: "VS Code", level: 90 },
+        { name: "Jupyter Notebook", level: 88 },
+        { name: "Postman", level: 80 }
       ]
     },
     {
       title: "Computer Science Concepts",
       skills: [
-        { name: "Data Structures", level: 88 },
-        { name: "Algorithms", level: 85 },
+        { name: "Data Structures", level: 85 },
+        { name: "Algorithms", level: 82 },
         { name: "DBMS", level: 86 },
-        { name: "OOP", level: 90 },
+        { name: "OOP Principles", level: 88 },
         { name: "Software Engineering", level: 84 }
       ]
     }
   ]
 };
 
-// Brand New Content Creation Data
+// Creative & Technical Highlights Data
 export const contentCreation = {
-  badge: "Cinematic Content",
-  heading: "Creative Direction & Cinematic Edits",
-  description: "Beyond coding, I craft visual stories with premium editing, color grading, and creative pacing.",
+  badge: "Innovation & AI",
+  heading: "Computer Vision & AI Innovations",
+  description: "Beyond core data analysis, I explore cutting-edge AI models, voice-guided navigation systems, and smart automation.",
   categories: [
     {
-      title: "Cinematic Reels",
-      description: "Visual stories crafted with cinematic lighting, premium color grading, and high-impact sound design.",
-      stats: "50+ Reels Created",
-      icon: "🎥"
+      title: "Assistive AI Systems",
+      description: "Building computer vision pipelines with YOLOv8 for spatial awareness and real-time obstacle detection.",
+      stats: "Computer Vision",
+      icon: "👁️"
     },
     {
-      title: "Travel Videos",
-      description: "Immersive travel vlogs and aesthetic edits capturing cultures, landscapes, and visual rhythms.",
-      stats: "15+ Countries/Cities",
-      icon: "✈️"
+      title: "Data Analytics & SQL",
+      description: "Designing optimized database schemas, writing complex queries, and extracting actionable metrics.",
+      stats: "Database Engineering",
+      icon: "📊"
     },
     {
-      title: "Educational Reels",
-      description: "Fast-paced tech tutorials and educational content designed to simplify coding and software engineering.",
-      stats: "100k+ Views",
+      title: "Machine Learning Models",
+      description: "Developing predictive algorithms using Scikit-Learn, Pandas, and structured machine learning workflows.",
+      stats: "Predictive AI",
       icon: "🧠"
     },
     {
-      title: "My Own Creative Edits",
-      description: "Experimental transitions, 3D overlays, and trendsetting visual effects that push creative bounds.",
-      stats: "Personal Projects",
+      title: "Python Automation & APIs",
+      description: "Integrating financial APIs, text-to-speech tools, and interactive chatbot solutions.",
+      stats: "Python Stack",
       icon: "⚡"
     }
   ]
 };
 
-// Brand New Leadership Data
+// Leadership Data
 export const leadershipList = [
   {
-    title: "IEEE Madhya Pradesh Section (Social Media Team)",
-    description: "Managed and coordinated digital content, driving audience engagement and designing interactive visual campaigns for tech events.",
-    role: "Social Media Coordinator",
-    badge: "Volunteer"
+    title: "Project Lead — Smart Blind Assistance System",
+    description: "Spearheaded the development and architecture of an AI-powered visual assistance tool using YOLOv8 and voice navigation.",
+    role: "Technical Lead",
+    badge: "AI Innovation"
   },
   {
-    title: "Team Coordinator – Go-Kart International Racing 2K25",
-    description: "Led multi-disciplinary teams in project management, budget control, and logistics coordination for a high-profile international racing event.",
-    role: "Team Coordinator",
-    badge: "Leadership"
-  },
-  {
-    title: "5-Day MOE IDE Bootcamp, Roorkee",
-    description: "Participated in an intensive Innovation, Design, and Entrepreneurship Bootcamp organized by the Ministry of Education at IIT Roorkee.",
-    role: "Bootcamp Graduate",
-    badge: "Innovation"
-  },
-  {
-    title: "Hosted INFORIA Tech Summit Hackathon",
-    description: "Organized and hosted the flagship hackathon, managing registrations, mentoring participant teams, and coordinating judge evaluations.",
-    role: "Hackathon Organizer",
+    title: "Computer Science Department Activities",
+    description: "Active participant in technical symposiums, coding hackathons, and departmental workshops at K. Ramakrishnan College of Engineering.",
+    role: "Department Student Member",
     badge: "Co-Curricular"
   },
   {
-    title: "Event Coordinator & Anchoring – INFORIA 2K25",
-    description: "Coordinated technical events and served as the main stage anchor, speaking in front of large crowds and managing the summit flow.",
-    role: "Stage Anchor & Coordinator",
-    badge: "Public Speaking"
+    title: "Open Source & GitHub Collaborations",
+    description: "Building and contributing to Python, SQL, and Machine Learning repositories for peer learning and community sharing.",
+    role: "Open Source Contributor",
+    badge: "Community"
   }
 ];
 
-// Brand New Internships Data
+// Internships Data
 export const internshipsList = [
   {
-    organization: "Netlink, Bhopal",
-    role: "Data Analytics & BI Tools Intern",
-    duration: "June 2025 - August 2025",
-    skills: ["Data Analytics", "Business Intelligence", "Dashboard Design", "Data Modeling"],
-    tech: ["Lumenore", "MySQL", "Excel", "BI Tools"]
+    organization: "Vedupskilling",
+    role: "Data Science Intern",
+    duration: "July 2026 - Present",
+    skills: ["Data Analysis", "Predictive Modeling", "Data Cleaning & Preprocessing", "Data Visualization"],
+    tech: ["Python", "SQL", "Pandas", "Scikit-Learn", "Matplotlib"]
   },
   {
-    organization: "Canva",
-    role: "Visual Content Creator & Designer",
-    duration: "May 2024 - June 2024",
-    skills: ["Visual Designing", "Poster Design", "Team Branding", "Asset Creation"],
-    tech: ["Canva Pro", "Figma", "Canva Design Suite"]
+    organization: "InAmigos Foundation",
+    role: "AI Web Development Intern",
+    duration: "July 2026",
+    skills: ["AI Web Integration", "Frontend Development", "API Connectivity", "UI Responsiveness"],
+    tech: ["Python", "JavaScript", "HTML5", "CSS3", "REST APIs"]
   },
   {
-    organization: "CollegeTips.in",
-    role: "Web Development Intern",
-    duration: "1 Month (Offline)",
-    skills: ["Frontend Development", "Responsive Layouts", "API Testing", "Web Performance"],
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"]
+    organization: "CodeAlpha",
+    role: "Python Programming Intern",
+    duration: "Jan 2026 - Feb 2026",
+    skills: ["Python Scripting", "Algorithm Implementation", "Data Handling", "Code Optimization"],
+    tech: ["Python", "Git", "Data Structures", "OOP"]
   }
 ];
 
-// Brand New Soft Skills Data
+// Soft Skills Data
 export const softSkillsList = [
-  { name: "Leadership", icon: "👑", desc: "Guiding teams, managing tasks, and driving project completion with shared vision." },
-  { name: "Public Speaking", icon: "🎤", desc: "Confident stage presence, anchoring summits, and delivering articulate technical ideas." },
-  { name: "Team Collaboration", icon: "🤝", desc: "Collaborating across fields, building racing carts, and engineering code in sync." },
-  { name: "Communication", icon: "💬", desc: "Clear, concise, and structured interactions in both business and technical contexts." },
-  { name: "Problem Solving", icon: "🧩", desc: "Breaking down complex engineering tasks into clean, logical, and modular pieces." },
-  { name: "Adaptability", icon: "🌟", desc: "Quick to pick up new frameworks like FastAPI, Spring Boot, or automation tools like n8n." },
-  { name: "Creativity", icon: "🎨", desc: "Blending cinematic aesthetics with software structure to build premium experiences." },
-  { name: "Time Management", icon: "⏰", desc: "Balancing B.Tech studies, event hosting, and developing robust software platforms." }
+  { name: "Problem Solving", icon: "🧩", desc: "Breaking down complex data and computer vision tasks into modular, efficient code." },
+  { name: "Analytical Thinking", icon: "📈", desc: "Extracting insights from data and optimizing algorithms for maximum accuracy." },
+  { name: "Team Collaboration", icon: "🤝", desc: "Working seamlessly with cross-functional project teams and peer developers." },
+  { name: "Communication", icon: "💬", desc: "Translating technical data findings and AI model results into clear insights." },
+  { name: "Adaptability", icon: "🌟", desc: "Quick to master new frameworks, libraries, and AI vision tools like YOLOv8." },
+  { name: "Time Management", icon: "⏰", desc: "Balancing B.E. coursework, internship deliverables, and hands-on AI projects." },
+  { name: "Attention to Detail", icon: "🔍", desc: "Ensuring clean data pipelines, precise query logic, and accurate model evaluation." },
+  { name: "Continuous Learning", icon: "🚀", desc: "Constantly expanding knowledge in Python, SQL, Machine Learning, and Computer Vision." }
 ];
 
+// Projects Data
 export const projects = [
   {
-    id: "foodmesh",
+    id: "smart-blind-assistance",
     number: "01",
-    badge: "🚀 Flagship Project",
-    title: "FoodMesh",
+    badge: "🚀 Flagship AI Project",
+    title: "Smart Blind Assistance System",
     description:
-      "FoodMesh — An enterprise-grade multi-tenant restaurant management and food ordering SaaS platform inspired by UrbanPiper. It enables restaurants to manage multiple outlets, menus, inventory, customers, staff, and orders through a scalable architecture with secure authentication, role-based access control, and real-time operations. Built with React, Next.js, NestJS, PostgreSQL, Redis, Kafka, Elasticsearch, Docker, Kubernetes, and AWS.",
+      "An assistive vision system powered by YOLOv8 object detection, Python, and real-time voice-guided navigation to empower visually impaired individuals with spatial awareness, obstacle identification, and audio feedback.",
     techTags: [
-      "React",
-      "Next.js",
-      "NestJS",
-      "PostgreSQL",
-      "Redis",
-      "Kafka",
-      "Elasticsearch",
-      "Docker",
-      "Kubernetes",
-      "AWS",
+      "YOLOv8",
+      "Python",
+      "Computer Vision",
+      "OpenCV",
+      "Voice Navigation",
+      "Text-to-Speech",
+      "AI",
     ],
     links: {
-      github: "https://github.com/ersamirsingh/UrbanPiper",
+      github: "https://github.com",
       demo: null,
     },
     isFlagship: true,
   },
   {
-    id: "karigar",
+    id: "task-management-system",
     number: "02",
     badge: null,
-    title: "Karigar",
+    title: "Task Management System",
     description:
-      "A platform connecting local skilled workers with customers, featuring real-time search, worker profiles, and booking management with full database integration.",
-    techTags: ["React", "Node.js", "MongoDB", "Express", "REST API"],
+      "A robust task management application built with Python and MySQL. Features secure user authentication, priority tracking, deadline reminders, and an intuitive relational schema for efficient productivity workflows.",
+    techTags: ["Python", "MySQL", "Authentication", "Database Design", "CRUD", "SQL"],
     links: {
-      github: "https://github.com/mdyusuf0/Karigar",
-      frontendDemo: "https://karigar-frontend.onrender.com",
-      backendApi: "https://karigar-zny2.onrender.com",
+      github: "https://github.com",
     },
     isFlagship: false,
   },
   {
-    id: "sentiment-analysis",
+    id: "stock-portfolio-tracker",
     number: "03",
     badge: null,
-    title: "AI-Powered Sentiment Analysis",
+    title: "Stock Portfolio Tracker & Chatbot",
     description:
-      "A full-stack web application that analyzes citizen feedback using Artificial Intelligence to classify sentiments as positive, negative, or neutral. Features a responsive React frontend, a Node.js backend, MongoDB for data storage, and n8n automation for workflow orchestration — enabling real-time insights and efficient feedback management.",
-    techTags: ["React", "Node.js", "MongoDB", "n8n", "AI/ML", "REST API"],
+      "A real-time financial tracking application and conversational AI chatbot built in Python. Integrates market data APIs to compute portfolio metrics, perform live valuation, and answer user queries using natural language processing.",
+    techTags: ["Python", "Real-time API", "NLTK", "Financial Data", "Chatbot", "AI"],
     links: {
-      github: "#", // Update when available
+      github: "https://github.com",
     },
     isFlagship: false,
   },
 ];
 
+// Certifications Data
 export const certificates = {
   featured: [
     {
-      name: "Oracle Cloud Infrastructure 2025",
-      issuer: "Oracle",
-      icon: "☁️",
-    },
-    {
-      name: "Programming in Java (94%)",
-      issuer: "NPTEL",
-      icon: "☕",
-    },
-    {
-      name: "C Programming & Assembly Language",
-      issuer: "NPTEL",
-      icon: "⚙️",
-    },
-    {
-      name: "Technology Job Simulation",
-      issuer: "Deloitte",
-      icon: "💼",
-    },
-    {
-      name: "Career Edge – IT Primer",
-      issuer: "TCS iON",
-      icon: "🎓",
-    },
-    {
-      name: "Fundamentals of BI & Analytics",
-      issuer: "Lumenore",
+      name: "SQL Certification",
+      issuer: "Simplilearn",
       icon: "📊",
+    },
+    {
+      name: "Data Science & Python",
+      issuer: "Scaler",
+      icon: "🐍",
+    },
+    {
+      name: "Basics of Python",
+      issuer: "Online Learning",
+      icon: "⚡",
     },
   ],
   viewAllUrl:
-    "https://drive.google.com/file/d/1ObdGWtVSx8SsfR4AcbCySSd9LFXcAs9f/view?usp=sharing",
+    "https://www.linkedin.com/in/arun-sarvesh-r-34252a373",
 };
 
+// Education Data
 export const education = {
-  degree: "B.Tech – Computer Science & Engineering",
-  institution: "IES College of Technology (RGPV)",
-  cgpa: "8.35",
-  graduation: "2027",
-  twelfth: "12th Science – 81%",
-  tenth: "10th CBSE – 70%",
+  degree: "B.E. – Computer Science & Engineering",
+  institution: "K. Ramakrishnan College of Engineering",
+  cgpa: "Pursuing",
+  graduation: "2028",
+  twelfth: "Higher Secondary (12th Science)",
+  tenth: "Secondary School (10th)",
 };
 
 export const footerContent = {
   taglines: [
-    "Software Engineering & Web Dev",
-    "Java · Spring Boot · React",
-    "Full Stack Applications",
+    "Data Science & Artificial Intelligence",
+    "Python · SQL · Computer Vision",
+    "Smart Assistance & Predictive Systems",
   ],
-  credential: "B.Tech CSE · CGPA 8.35",
-  copyright: `© ${new Date().getFullYear()} Md Yusuf | Built with React`,
+  credential: "B.E. CSE · K. Ramakrishnan College of Engg (2024 - 2028)",
+  copyright: `© ${new Date().getFullYear()} Arun Sarvesh R | Built with React & Vite`,
 };
 
 // EmailJS Configuration
-// Will read directly from environment variables in Vite (starting with VITE_)
 export const emailjsConfig = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_EMAILJS_SERVICE_ID",
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_EMAILJS_TEMPLATE_ID",
   publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_EMAILJS_PUBLIC_KEY",
 };
+
