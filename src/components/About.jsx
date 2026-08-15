@@ -107,12 +107,26 @@ const About = () => {
           
           <h2 className="text-4xl md:text-5xl font-black text-black mb-6 tracking-tight uppercase">{aboutContent.heading}</h2>
           <p 
-            className="text-base md:text-lg font-medium tracking-normal leading-relaxed mb-12 max-w-3xl text-white/95 drop-shadow-sm"
+            className="text-base md:text-lg font-medium tracking-normal leading-relaxed mb-8 max-w-3xl text-white/95 drop-shadow-sm"
             dangerouslySetInnerHTML={{ __html: aboutContent.bio }}
           />
 
+          {/* Resume Download CTA */}
+          <div className="mb-8">
+            <a 
+              href={personalInfo.resumeUrl}
+              download
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black text-white font-bold text-sm hover:bg-gray-900 hover:shadow-[0_10px_25px_rgba(0,0,0,0.4)] transition-all duration-300 transform hover:-translate-y-0.5"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Download Resume (PDF)
+            </a>
+          </div>
+
           {/* Horizontal Skills Row in Glass Cards */}
-          <div className="flex flex-wrap items-center gap-4 md:gap-5 mt-8">
+          <div className="flex flex-wrap items-center gap-4 md:gap-5 mt-4">
             <div data-aos="zoom-in" data-aos-delay="300" className="bg-black/30 backdrop-blur-md border border-white/15 hover:border-white/40 hover:-translate-y-1 hover:bg-black/40 hover:shadow-[0_12px_30px_rgba(0,0,0,0.4)] transition-all duration-300 rounded-2xl p-3 md:p-4 cursor-pointer">
               <PythonIcon />
             </div>

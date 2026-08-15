@@ -57,11 +57,21 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Right Side: CTA Button */}
-        <div className="hidden md:block">
+        {/* Right Side: CTA Buttons */}
+        <div className="hidden md:flex items-center gap-3">
+          <a 
+            href={personalInfo.resumeUrl}
+            download
+            className="px-5 py-2 rounded-full bg-white/5 border border-white/20 text-white text-xs font-bold tracking-wide hover:bg-white hover:text-black transition-all duration-300 backdrop-blur-md flex items-center gap-1.5"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Resume
+          </a>
           <a 
             href={hireMeMailto}
-            className="px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-white text-sm font-bold tracking-wide hover:bg-white hover:text-black hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all duration-300 backdrop-blur-md inline-block"
+            className="px-6 py-2 rounded-full bg-white/10 border border-white/20 text-white text-xs font-bold tracking-wide hover:bg-white hover:text-black hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all duration-300 backdrop-blur-md inline-block"
           >
             Hire Me
           </a>
@@ -102,11 +112,22 @@ const Navbar = () => {
               {link}
             </a>
           ))}
-          <div className="pt-4 pb-2">
+          <div className="pt-2 pb-2 flex flex-col gap-2">
+             <a 
+               href={personalInfo.resumeUrl}
+               download
+               onClick={() => setIsOpen(false)} 
+               className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-black text-white font-bold text-sm hover:bg-gray-900 transition-colors w-full text-center shadow-md"
+             >
+               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+               </svg>
+               Download Resume (PDF)
+             </a>
              <a 
                href={hireMeMailto}
                onClick={() => setIsOpen(false)} 
-               className="inline-block px-6 py-3 rounded-full bg-white text-[#ff2a2a] font-black hover:bg-black hover:text-white transition-colors w-full text-center shadow-lg"
+               className="inline-block px-6 py-2.5 rounded-full bg-white text-[#ff2a2a] font-black hover:bg-black hover:text-white transition-colors w-full text-center shadow-lg"
              >
                Hire Me
              </a>

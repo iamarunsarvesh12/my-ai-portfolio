@@ -35,7 +35,11 @@ const Footer = () => {
       {/* Bottom Row */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 w-full items-end font-medium">
         <div className="flex flex-col gap-4">
-          <a href="#contact" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 font-bold text-white">Contact</a>
+          <div className="flex items-center gap-4 flex-wrap">
+            <a href="#contact" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 font-bold text-white">Contact</a>
+            <span className="text-white/30">•</span>
+            <a href={personalInfo.resumeUrl} download className="underline hover:text-[#ff2a2a] transition-colors underline-offset-4 decoration-1 font-bold text-white/90">Download Resume</a>
+          </div>
           <p className="text-white/50 font-mono text-[9px] md:text-[10px]">
             {footerContent.copyright}
           </p>
