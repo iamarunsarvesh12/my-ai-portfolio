@@ -9,7 +9,10 @@ export const personalInfo = {
   firstName: "Arun Sarvesh",
   brandName: "Arun Sarvesh",
   title: "Computer Science & Engineering Student | Java • Python • DSA • AI",
+  email: "iamarunsarvesh@gmail.com",
   location: "Trichy, Tamil Nadu",
+  linkedin: "https://www.linkedin.com/in/arun-sarvesh-r-34252a373",
+  github: "https://github.com/iamarunsarvesh12",
   emails: {
     primary: "iamarunsarvesh@gmail.com",
     secondary: "iamarunsarvesh@gmail.com",
