@@ -21,7 +21,7 @@ export const personalInfo = {
 };
 
 export const socialLinks = {
-  github: "https://github.com",
+  github: "https://github.com/iamarunsarvesh12",
   linkedin: "https://www.linkedin.com/in/arun-sarvesh-r-34252a373",
   instagram: "https://instagram.com",
 };
