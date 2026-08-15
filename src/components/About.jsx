@@ -1,7 +1,7 @@
 /* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
 import React from 'react';
 import stackImage from '../assets/about/image.png';
-import { aboutContent } from '../data/portfolioData';
+import { aboutContent, personalInfo } from '../data/portfolioData';
 
 // Tech stack SVG icons rendered in elevated cards for crisp rendering
 const PythonIcon = () => (
