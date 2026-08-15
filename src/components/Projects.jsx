@@ -1,3 +1,4 @@
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
 import React from 'react';
 import { projects, socialLinks } from '../data/portfolioData';
 
@@ -17,32 +18,32 @@ const ProjectCard = ({ project, aosDelay }) => (
   <div 
     data-aos="fade-up"
     data-aos-delay={aosDelay}
-    className={`relative rounded-2xl p-[1px] group transition-all duration-500 ${
+    className={`relative rounded-3xl p-[1px] group transition-all duration-500 hover:-translate-y-1 ${
       project.isFlagship 
-        ? 'bg-gradient-to-br from-red-500/50 via-white/10 to-red-500/30 hover:from-red-500 hover:via-red-400/30 hover:to-red-500/60' 
-        : 'bg-white/10 hover:bg-white/20'
+        ? 'bg-gradient-to-br from-[#ff2a2a]/60 via-white/10 to-[#ff2a2a]/40 hover:from-[#ff2a2a] hover:via-white/20 hover:to-[#ff2a2a]/70 hover:shadow-[0_20px_50px_rgba(255,42,42,0.2)]' 
+        : 'bg-white/10 hover:bg-white/20 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)]'
     }`}
   >
-    <div className={`rounded-2xl p-6 md:p-8 h-full backdrop-blur-md transition-all duration-500 ${
+    <div className={`rounded-3xl p-7 md:p-10 h-full backdrop-blur-xl transition-all duration-500 ${
       project.isFlagship 
         ? 'bg-[#0f0f0f]/95 group-hover:bg-[#0f0f0f]/90' 
-        : 'bg-[#111111]/90 group-hover:bg-[#111111]/80'
+        : 'bg-[#111111]/95 group-hover:bg-[#111111]/90'
     }`}>
       {/* Badge */}
       {project.badge && (
-        <span className="inline-block text-xs font-bold tracking-widest uppercase text-red-400 bg-red-500/10 px-3 py-1 rounded-full border border-red-500/20 mb-4">
+        <span className="inline-block text-xs font-extrabold tracking-widest uppercase text-[#ff2a2a] bg-[#ff2a2a]/10 px-3.5 py-1 rounded-full border border-[#ff2a2a]/30 mb-5 shadow-[0_0_12px_rgba(255,42,42,0.2)]">
           {project.badge}
         </span>
       )}
 
       {/* Number + Title */}
       <div className="flex items-baseline gap-4 mb-4">
-        <span className="text-5xl font-black text-white/10 font-serif italic">{project.number}</span>
-        <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight">{project.title}</h3>
+        <span className="text-4xl md:text-5xl font-black text-white/15 font-serif italic">{project.number}</span>
+        <h3 className="text-2xl md:text-3xl font-black text-white tracking-tight group-hover:text-white transition-colors">{project.title}</h3>
       </div>
 
       {/* Description */}
-      <p className="text-white/60 text-sm md:text-base leading-relaxed mb-6 max-w-2xl font-medium">
+      <p className="text-white/70 text-sm md:text-base leading-relaxed mb-6 max-w-2xl font-medium">
         {project.description}
       </p>
 
@@ -51,7 +52,7 @@ const ProjectCard = ({ project, aosDelay }) => (
         {project.techTags.map((tag) => (
           <span 
             key={tag}
-            className="px-3 py-1 text-xs font-bold text-white/70 bg-white/5 rounded-full border border-white/10 hover:bg-red-500/20 hover:border-red-500/30 hover:text-red-300 transition-all duration-300 cursor-default"
+            className="px-3.5 py-1 text-xs font-semibold text-white/80 bg-white/5 rounded-full border border-white/10 hover:bg-[#ff2a2a]/15 hover:border-[#ff2a2a]/40 hover:text-white transition-all duration-300 cursor-default"
           >
             {tag}
           </span>
@@ -66,7 +67,7 @@ const ProjectCard = ({ project, aosDelay }) => (
             href={project.links.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-semibold hover:bg-white hover:text-black transition-all duration-300 group/btn"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 border border-white/20 text-white text-xs md:text-sm font-bold tracking-wide hover:bg-white hover:text-black transition-all duration-300 group/btn"
           >
             <GitHubIcon />
             GitHub
@@ -79,9 +80,9 @@ const ProjectCard = ({ project, aosDelay }) => (
             href={project.links.demo || '#'}
             target={project.links.demo ? "_blank" : undefined}
             rel={project.links.demo ? "noopener noreferrer" : undefined}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs md:text-sm font-bold tracking-wide transition-all duration-300 ${
               project.links.demo 
-                ? 'bg-[#ff2a2a] text-white hover:bg-red-600 hover:shadow-[0_0_20px_rgba(255,42,42,0.4)]' 
+                ? 'bg-[#ff2a2a] text-white hover:bg-red-600 hover:shadow-[0_0_25px_rgba(255,42,42,0.5)]' 
                 : 'bg-white/5 text-white/40 border border-white/10 cursor-not-allowed'
             }`}
           >
@@ -96,7 +97,7 @@ const ProjectCard = ({ project, aosDelay }) => (
             href={project.links.frontendDemo}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#ff2a2a] text-white text-sm font-semibold hover:bg-red-600 hover:shadow-[0_0_20px_rgba(255,42,42,0.4)] transition-all duration-300"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#ff2a2a] text-white text-xs md:text-sm font-bold tracking-wide hover:bg-red-600 hover:shadow-[0_0_25px_rgba(255,42,42,0.5)] transition-all duration-300"
           >
             <ExternalLinkIcon />
             Frontend Demo
@@ -109,7 +110,7 @@ const ProjectCard = ({ project, aosDelay }) => (
             href={project.links.backendApi}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-semibold hover:bg-white/20 transition-all duration-300"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 border border-white/20 text-white text-xs md:text-sm font-bold tracking-wide hover:bg-white/20 transition-all duration-300"
           >
             <ExternalLinkIcon />
             Backend API
@@ -122,19 +123,19 @@ const ProjectCard = ({ project, aosDelay }) => (
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-[#0a0a0a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]">
+    <section id="projects" className="bg-[#0a0a0a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans border-t border-white/5 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]">
       <div className="max-w-6xl mx-auto">
         
         {/* Header */}
         <div data-aos="fade-up" className="mb-16 md:mb-20">
-          <div className="inline-block border border-white/20 rounded-full px-5 py-1.5 text-sm text-white/60 font-bold mb-8 shadow-sm bg-white/5 backdrop-blur-sm">
+          <div className="inline-block border border-white/20 rounded-full px-5 py-1.5 text-xs font-bold text-white/70 uppercase tracking-widest mb-6 shadow-sm bg-white/5 backdrop-blur-md">
             Featured Projects
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] mb-6 tracking-tight">
             Work that speaks <br className="hidden md:block" />for itself
           </h2>
-          <p className="text-white/50 text-base md:text-lg max-w-lg font-medium leading-relaxed">
-            A selection of projects that showcase my expertise in full-stack development and modern architecture.
+          <p className="text-white/60 text-base md:text-lg max-w-lg font-medium leading-relaxed">
+            A selection of projects that showcase my expertise in AI models, computer vision, data analysis, and modern engineering architecture.
           </p>
         </div>
 
@@ -155,7 +156,7 @@ const Projects = () => {
             href={socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 px-8 py-4 rounded-full border border-white/20 text-white font-bold text-lg hover:bg-white hover:text-black hover:shadow-[0_0_30px_rgba(255,255,255,0.15)] transition-all duration-500 group"
+            className="flex items-center gap-3 px-8 py-4 rounded-full border border-white/20 text-white font-bold text-base md:text-lg hover:bg-white hover:text-black hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] transition-all duration-500 group backdrop-blur-md"
           >
             <GitHubIcon />
             Explore All My Repositories

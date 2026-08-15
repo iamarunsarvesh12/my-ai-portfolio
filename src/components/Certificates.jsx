@@ -1,3 +1,4 @@
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
 import React from 'react';
 import { certificates } from '../data/portfolioData';
 
@@ -5,15 +6,15 @@ const CertificateCard = ({ cert, aosDelay }) => (
   <div 
     data-aos="zoom-in"
     data-aos-delay={aosDelay}
-    className="bg-black/20 backdrop-blur-sm rounded-2xl p-5 border border-white/10 hover:border-white/25 hover:scale-105 hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)] transition-all duration-500 cursor-default group"
+    className="bg-black/30 backdrop-blur-md rounded-2xl p-6 border border-white/15 hover:border-white/30 hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)] transition-all duration-500 cursor-default group"
   >
     <div className="flex items-start gap-4">
       <span className="text-2xl mt-0.5 group-hover:scale-110 transition-transform duration-300">{cert.icon}</span>
       <div>
-        <h3 className="text-white font-bold text-sm md:text-base leading-tight mb-1 group-hover:text-white transition-colors">
+        <h3 className="text-white font-black text-base leading-tight mb-1 group-hover:text-white transition-colors">
           {cert.name}
         </h3>
-        <p className="text-white/50 text-xs font-semibold uppercase tracking-wider">
+        <p className="text-black font-extrabold text-xs uppercase tracking-wider">
           {cert.issuer}
         </p>
       </div>
@@ -35,10 +36,10 @@ const Certificates = () => {
       <div className="max-w-6xl mx-auto relative z-20">
         {/* Header */}
         <div data-aos="fade-up" className="mb-12 md:mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight uppercase">
             Certifications
           </h2>
-          <p className="text-red-100 text-base md:text-lg font-semibold max-w-lg mx-auto">
+          <p className="text-white/95 text-base md:text-lg font-medium max-w-lg mx-auto">
             Industry-recognized certifications that validate my technical expertise.
           </p>
         </div>

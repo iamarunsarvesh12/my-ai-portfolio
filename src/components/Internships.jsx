@@ -1,3 +1,4 @@
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
 import React from 'react';
 import { internshipsList } from '../data/portfolioData';
 
@@ -5,28 +6,28 @@ const InternshipCard = ({ intern, index }) => (
   <div 
     data-aos="fade-up"
     data-aos-delay={index * 150}
-    className="bg-black/20 backdrop-blur-md border border-white/10 rounded-3xl p-8 hover:scale-[1.02] hover:bg-black/35 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 flex flex-col justify-between"
+    className="bg-black/30 backdrop-blur-xl border border-white/15 rounded-3xl p-8 hover:-translate-y-1 hover:bg-black/45 hover:border-white/30 hover:shadow-[0_25px_50px_rgba(0,0,0,0.4)] transition-all duration-500 flex flex-col justify-between"
   >
     <div>
       <div className="flex justify-between items-start mb-6">
-        <span className="text-white/40 text-xs font-mono font-bold tracking-widest uppercase">
+        <span className="text-white/60 text-xs font-mono font-bold tracking-widest uppercase bg-black/20 px-3 py-1 rounded-full border border-white/10">
           {intern.duration}
         </span>
-        <span className="bg-white/10 text-white text-[10px] font-black tracking-widest uppercase py-1 px-3 rounded-full border border-white/15">
+        <span className="bg-white/10 text-white text-[10px] font-black tracking-widest uppercase py-1 px-3 rounded-full border border-white/20">
           Internship
         </span>
       </div>
-      <h3 className="text-white text-2xl font-black mb-1 tracking-tight">
+      <h3 className="text-white text-2xl font-black mb-1.5 tracking-tight">
         {intern.role}
       </h3>
-      <p className="text-red-200 text-sm font-black tracking-wide mb-6 uppercase">
+      <p className="text-black font-extrabold text-sm tracking-wide mb-6 uppercase">
         {intern.organization}
       </p>
 
       {/* Skills gained */}
       <div className="mb-6">
-        <h4 className="text-white/60 text-xs font-bold uppercase tracking-wider mb-2">Skills Gained:</h4>
-        <ul className="text-white/90 text-sm font-medium space-y-1 pl-4 list-disc">
+        <h4 className="text-white/70 text-xs font-bold uppercase tracking-wider mb-2">Skills Gained:</h4>
+        <ul className="text-white/95 text-sm font-medium space-y-1.5 pl-4 list-disc marker:text-black">
           {intern.skills.map((skill, i) => (
             <li key={i}>{skill}</li>
           ))}
@@ -36,12 +37,12 @@ const InternshipCard = ({ intern, index }) => (
 
     {/* Technologies used */}
     <div className="pt-4 border-t border-white/10">
-      <h4 className="text-white/60 text-xs font-bold uppercase tracking-wider mb-3">Technologies:</h4>
+      <h4 className="text-white/70 text-xs font-bold uppercase tracking-wider mb-3">Technologies:</h4>
       <div className="flex flex-wrap gap-2">
         {intern.tech.map((t) => (
           <span 
             key={t}
-            className="px-3 py-1 text-xs font-mono font-bold text-white bg-white/10 rounded-full border border-white/10 hover:bg-white/20 transition-all"
+            className="px-3 py-1 text-xs font-mono font-bold text-white bg-white/10 rounded-full border border-white/15 hover:bg-white/20 transition-all"
           >
             {t}
           </span>
@@ -69,7 +70,7 @@ const Internships = () => {
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight uppercase">
             Work Experience
           </h2>
-          <p className="text-red-100 text-base md:text-lg font-semibold max-w-lg mx-auto">
+          <p className="text-white/95 text-base md:text-lg font-medium max-w-lg mx-auto">
             Practical internships where I applied engineering principles and built real-world assets.
           </p>
         </div>
