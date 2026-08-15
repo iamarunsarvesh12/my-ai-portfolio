@@ -24,6 +24,38 @@ const SqlIcon = () => (
   </div>
 );
 
+const JavaIcon = () => (
+  <div className="flex flex-col items-center gap-2">
+    <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 128 128">
+      <path fill="#5382A1" d="M48.8 98.4s-5.6 3.1 3.9 4.2c11.6 1.4 20.4 1 33.6-1.5 0 0 3.8 2.3 8.3 4.2-22.1 8.5-52.6 1.9-45.8-6.9z"/>
+      <path fill="#E76F00" d="M43.7 82.2s-6.3 4.4 3 5.4c11.4 1.3 25.1 1.2 41.5-2.2 0 0 2.7 2.9 6.2 4.3-25.7 6.4-58.4 2.8-50.7-7.5z"/>
+      <path fill="#5382A1" d="M63.5 64.9c5.3 6.1-1.4 11.6-1.4 11.6s13.4-6.8 7.3-14.7c-5.6-7.2-9.9-10.7-20.2-19.8 0 0 3.7 8.2 14.3 22.9z"/>
+      <path fill="#E76F00" d="M85.4 97c11.1-6.4 12.1-14.5 12.1-14.5s-2.1 4.5-9.3 7.8c-10.3 4.6-25.1 4.2-39.7 1.9 0 0 3.1 2.3 7.2 3.8 9 3.2 18.6 7.4 29.7 1z"/>
+      <path fill="#5382A1" d="M37.9 109.9c15.2 3.8 45 4.5 59.4-1.9 0 0-4.3 3.6-10.4 5.3-17.5 4.8-43.1 3.4-53.7-2.3 0 0 1.9-.6 4.7-1.1z"/>
+      <path fill="#E76F00" d="M82.2 47.9c4.8 5.6 1.7 13.9.7 17 0 0 7.8-4.8 4.2-11.4-3.9-7-6.2-9.8-15.6-17.6 0 0 5 3.3 10.7 12z"/>
+      <path fill="#5382A1" d="M72.2 16c8.5 9.7-14.5 28.5-14.5 28.5s20.9-12.7 14.5-28.5z"/>
+    </svg>
+    <span className="text-xs font-bold text-white/80 uppercase tracking-wider">Java</span>
+  </div>
+);
+
+const DsaIcon = () => (
+  <div className="flex flex-col items-center gap-2">
+    <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 128 128">
+      <path d="M64 24 L28 56 L44 96 L84 96 L100 56 Z" fill="none" stroke="#A855F7" strokeWidth="5" strokeLinejoin="round" />
+      <line x1="64" y1="24" x2="44" y2="96" stroke="#A855F7" strokeWidth="4" strokeDasharray="4 4" />
+      <line x1="64" y1="24" x2="84" y2="96" stroke="#A855F7" strokeWidth="4" strokeDasharray="4 4" />
+      <line x1="28" y1="56" x2="100" y2="56" stroke="#A855F7" strokeWidth="4" />
+      <circle cx="64" cy="24" r="9" fill="#A855F7" />
+      <circle cx="28" cy="56" r="9" fill="#38BDF8" />
+      <circle cx="100" cy="56" r="9" fill="#38BDF8" />
+      <circle cx="44" cy="96" r="9" fill="#34D399" />
+      <circle cx="84" cy="96" r="9" fill="#34D399" />
+    </svg>
+    <span className="text-xs font-bold text-white/80 uppercase tracking-wider">DSA</span>
+  </div>
+);
+
 const AiCvIcon = () => (
   <div className="flex flex-col items-center gap-2">
     <svg className="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 128 128">
@@ -74,19 +106,25 @@ const About = () => {
           
           <h2 className="text-4xl md:text-5xl font-black text-black mb-4">{aboutContent.heading}</h2>
           <p 
-            className="text-lg font-bold mb-12 leading-relaxed max-w-3xl text-red-50"
+            className="text-base md:text-lg font-medium tracking-normal md:tracking-wide leading-relaxed mb-12 max-w-3xl text-white/95"
             dangerouslySetInnerHTML={{ __html: aboutContent.bio }}
           />
 
           {/* Horizontal Skills Row */}
-          <div className="flex items-center gap-10 mt-8">
+          <div className="flex flex-wrap items-center gap-6 md:gap-8 mt-8">
             <div data-aos="zoom-in" data-aos-delay="300" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <PythonIcon />
             </div>
-            <div data-aos="zoom-in" data-aos-delay="450" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+            <div data-aos="zoom-in" data-aos-delay="400" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <SqlIcon />
             </div>
+            <div data-aos="zoom-in" data-aos-delay="500" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+              <JavaIcon />
+            </div>
             <div data-aos="zoom-in" data-aos-delay="600" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+              <DsaIcon />
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="700" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <AiCvIcon />
             </div>
           </div>

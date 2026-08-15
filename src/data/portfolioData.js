@@ -8,7 +8,7 @@ export const personalInfo = {
   name: "Arun Sarvesh R",
   firstName: "Arun Sarvesh",
   brandName: "Arun Sarvesh",
-  title: "Data Science Enthusiast | Python • SQL • AI & Computer Vision",
+  title: "Data Science Enthusiast | Python • SQL • Java • DSA • AI & Computer Vision",
   location: "Srirangam, Tamil Nadu, India",
   phone: "+91 8667794520",
   emails: {
@@ -16,7 +16,7 @@ export const personalInfo = {
     secondary: "iamarunsarvesh@gmail.com",
   },
   summary:
-    "Passionate Data Science Enthusiast and B.E. Computer Science student at K. Ramakrishnan College of Engineering (2024 - 2028). Skilled in Python, SQL, Machine Learning, Computer Vision, and building AI-driven real-time applications.",
+    "Passionate Data Science Enthusiast and B.E. Computer Science student at K. Ramakrishnan College of Engineering (2024 - 2028). Skilled in Python, SQL, Java, DSA, Machine Learning, Computer Vision, and building AI-driven real-time applications.",
   resumeUrl: "/Arun_Sarvesh_Resume.pdf",
 };
 
@@ -30,7 +30,7 @@ export const heroContent = {
   greeting: "Hi, I'm Arun Sarvesh",
   titleHighlight: "Data Science Enthusiast",
   subtitle:
-    "Python • SQL • AI & Computer Vision | Building intelligent solutions, predictive models, and real-time AI systems.",
+    "Python • SQL • Java • DSA • AI & Computer Vision | Building intelligent solutions, predictive models, and real-time AI systems.",
   ctaPrimary: { text: "View My Work", href: "#projects" },
   ctaSecondary: {
     text: "Contact Me",
@@ -41,8 +41,8 @@ export const heroContent = {
 
 export const aboutContent = {
   heading: "Hello!",
-  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Arun Sarvesh R</span>, a Data Science Enthusiast pursuing B.E. Computer Science at K. Ramakrishnan College of Engineering (2024 - 2028). Dedicated to leveraging Python, SQL, Machine Learning, and Computer Vision to solve real-world engineering challenges.`,
-  techStack: ["Python", "SQL", "AI & Computer Vision"],
+  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">ARUN SARVESH R</span>, a Data Science Enthusiast pursuing B.E. Computer Science at K. Ramakrishnan College of Engineering (2024 - 2028). Dedicated to leveraging Python, Java, DSA, SQL, Machine Learning, and Computer Vision to solve real-world engineering challenges.`,
+  techStack: ["Python", "SQL", "Java", "DSA", "AI & Computer Vision"],
 };
 
 export const skillsContent = {
@@ -83,7 +83,7 @@ export const technicalSkills = {
       skills: [
         { name: "Python", level: 92 },
         { name: "SQL", level: 88 },
-        { name: "C / C++ Basics", level: 75 }
+        { name: "Java & DSA", level: 85 }
       ]
     },
     {
