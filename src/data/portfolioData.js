@@ -10,7 +10,6 @@ export const personalInfo = {
   brandName: "Arun Sarvesh",
   title: "Data Science Enthusiast | Python • SQL • Java • DSA • AI & Computer Vision",
   location: "Srirangam, Tamil Nadu, India",
-  phone: "+91 8667794520",
   emails: {
     primary: "iamarunsarvesh@gmail.com",
     secondary: "iamarunsarvesh@gmail.com",
@@ -23,7 +22,7 @@ export const personalInfo = {
 export const socialLinks = {
   github: "https://github.com/iamarunsarvesh12",
   linkedin: "https://www.linkedin.com/in/arun-sarvesh-r-34252a373",
-  instagram: "https://instagram.com",
+  email: "mailto:iamarunsarvesh@gmail.com",
 };
 
 export const heroContent = {
